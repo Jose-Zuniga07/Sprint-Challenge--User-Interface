@@ -170,9 +170,16 @@ footer nav a {
     text-decoration: none;
 }
 
-/* media queries */
+                    /* media queries */
 
-@media (max-width: 800px){
+@media (min-width: 800px){
+    .container {
+        height: 15%;
+    }
+    .lights {
+        height: 8%;
+        margin: 1%;
+    }
     .div2 {
         width: 100%;
         display: flex;;
@@ -187,6 +194,7 @@ footer nav a {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
     }
 
     .main-nav .links {
@@ -196,6 +204,9 @@ footer nav a {
     }
 
     /* middle boxes */
+    .middle-content .boxes {
+        width: 97%;
+    }
 
     .boxes {
         justify-content: center;
@@ -239,19 +250,25 @@ footer nav a {
     /* footer nav */
 
     footer {
-        border: 3px solid yellow;
+        margin: 10%;
+        width: 75%;
+        height: 15%;
+    }
+
+    footer .footcontainer div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
     }
 
     nav.footcontainer {
-        width: 100%;
-        border: 3px solid red;
+        width: 80%;
     }
 
-    nav.footcontainer div a {
+    nav .footcontainer div a {
         display: flex;
-        border: 2px solid white;
-        width: 100%;
-        background-color: red;
+        justify-content: space-between;
     }
 
 
@@ -262,40 +279,50 @@ footer nav a {
 
     /* media queries */
 
-    @media (max-width: 500px) {
-    #home {
+@media (max-width: 500px) {
+
+    .main-nav {
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 30%;
+         width: 100%;
+         height: 10%;
     }
 
     h2 {
+        text-align: left;
         font-size: 1.6rem;
         margin-top: 20%;
     }
 
     .links {
-        margin: 10% 10%;
+        margin: 5%;
     }
 
     .div1 {
-        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
     }
 
+
     .div2 {
-        text-align: center;
-        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.4rem;
+        width: 100%;
+        height: 50%;
     }
     /* imge content */
     .lights {
-        width: 100%;
-        height: 20%;
+        width: 85%;
+        height: 10%;
         margin-top: 3%;
     }
 
     .lights img {
-        width: 70%;
+        width: 90%;
         height: 100%;
         margin-left: 14%;
     }
@@ -307,8 +334,15 @@ footer nav a {
     }
     .top-content {
         flex-direction: column;
-        align-content: center;
-        text-align: left;
+        align-content: flex-start;
+        text-align: center;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 25%;
+        padding-bottom: 0;
+
     }
     /* middle content */
 
@@ -377,7 +411,7 @@ footer nav a {
     /* footer */
     footer {
         width: 100%;
-        height: 100%;
+        height: 40%;
     }
     .footcontainer {
         width: 100%;
@@ -390,9 +424,12 @@ footer nav a {
         display: flex;
         flex-direction: column;
         margin: 20%;
-        padding: 8%;
-        font-size: 1rem;
+        font-size: 1.6rem;
 
+    }
+
+    .footcontainer div {
+        width: 35%;
     }
 }
 
